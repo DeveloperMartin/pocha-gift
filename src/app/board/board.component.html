@@ -1,0 +1,28 @@
+@if(juegoTerminado && !isWin) {
+<div class="mensaje-finalizacion">Perdiste 😔, intentalo devuelta</div>
+} @else if(juegoTerminado && isWin){
+<div class="mensaje-finalizacion">{{ winnerMessage }}</div>
+}
+
+<div class="contador">
+  <app-timer></app-timer>
+</div>
+<div class="tablero">
+  @for (carta of cartas; track carta) {
+  <div class="carta" (click)="flipCard(carta)">
+    @if(carta.isFlip) {
+    <img [src]="carta.image" />
+    } @else {
+    <img src="assets/personajes/thekiss.jpeg" />
+    }
+  </div>
+  }
+
+  <!-- Muestra la imagen de la carta si está volteada -->
+</div>
+@if (quote.id != 0) {
+<div class="quote-container">
+  <p class="quote">{{ quote.quote }}</p>
+  <p class="character">- {{ quote.character }}</p>
+</div>
+}

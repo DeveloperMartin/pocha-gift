@@ -1,0 +1,82 @@
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Ajusta según el número de cartas */
+  gap: 10px;
+  justify-content: center;
+  align-items: center; /* Centra las cartas verticalmente en su contenedor */
+  padding: 20px; /* Añade un poco de padding para evitar que las cartas toquen los bordes */
+  margin: 0 auto; /* Centra el tablero en la pantalla */
+  max-width: 40px; /* Ajusta esto según el tamaño máximo que desees para tu tablero */
+}
+
+.carta img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: opacity 0.5s ease; /* Suaviza la transición de la opacidad */
+}
+
+.carta img[src*="thekiss.jpeg"] {
+  opacity: 0.5; /* Opacidad inicial más baja para las imágenes de portada */
+}
+
+.carta:hover img[src*="thekiss.jpeg"] {
+  opacity: 1; /* Opacidad completa al hacer hover */
+}
+
+.carta {
+  width:70px;
+  height: 100px;
+  background-color: #f0f0f0; /* Color de fondo cuando la carta está boca abajo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; /* Cambia el cursor para indicar que la carta es interactiva */
+}
+
+.carta img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.contador {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  width: 100%;
+}
+
+.mensaje-finalizacion {
+  font-family: 'Roboto', Courier, monospace;
+  opacity: 1;
+  z-index: 1000;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.quote-container {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f699282b;
+  border-left: 4px solid #ccc;
+  font-family: 'Times New Roman', Times, serif;
+  color: #333;
+}
+
+.quote {
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.character {
+  font-size: 16px;
+  text-align: right;
+  margin-top: 10px;
+}

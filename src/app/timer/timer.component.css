@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('/assets/fonts/GlacialIndifference-Regular.woff2') format('woff2'),
+       url('/assets/fonts/GlacialIndifference-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.contador {
+  font-family: 'Glacial Indifference', sans-serif;
+  font-size: 20px;
+}
