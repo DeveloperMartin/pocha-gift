@@ -10,30 +10,30 @@ import { HttpClientModule } from '@angular/common/http';
   styleUrl: './timer.component.css'
 })
 export class TimerComponent implements OnInit, OnDestroy {
-  tiempoRestante: number = 60; // 60 segundos para el contador
+  tiempoRestante: number = 20;
   intervalId: any;
 
   constructor(private gameService: GameService) { }
 
   ngOnInit() {
-    this.iniciarTemporizador();
+    this.startTimer();
   }
 
   ngOnDestroy() {
-    this.detenerTemporizador();
+    this.stopTimer();
   }
 
-  iniciarTemporizador() {
+  startTimer() {
     this.intervalId = setInterval(() => {
       this.tiempoRestante--;
       if (this.tiempoRestante === 0) {
-        this.detenerTemporizador();
+        this.stopTimer();
         this.gameService.notifyTimerFinished();
       }
     }, 1000);
   }
 
-  detenerTemporizador() {
+  stopTimer() {
     if (this.intervalId) {
       clearInterval(this.intervalId);
     }

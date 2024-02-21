@@ -1,28 +1,23 @@
 @if(juegoTerminado && !isWin) {
 <div class="mensaje-finalizacion">Perdiste 😔, intentalo devuelta</div>
-} @else if(juegoTerminado && isWin){
-<div class="mensaje-finalizacion">{{ winnerMessage }}</div>
 }
+
+<app-message></app-message>
 
 <div class="contador">
   <app-timer></app-timer>
 </div>
 <div class="tablero">
-  @for (carta of cartas; track carta) {
-  <div class="carta" (click)="flipCard(carta)">
-    @if(carta.isFlip) {
-    <img [src]="carta.image" />
+  @for (card of deckService.getDeck(); track card) {
+  <div class="carta" (click)="cardAction(card)">
+    @if(card.isFlip) {
+    <img [src]="card.image" />
     } @else {
-    <img src="assets/personajes/thekiss.jpeg" />
+    <img src="assets/personajes/portrait.jpg" />
     }
   </div>
   }
-
-  <!-- Muestra la imagen de la carta si está volteada -->
 </div>
-@if (quote.id != 0) {
-<div class="quote-container">
-  <p class="quote">{{ quote.quote }}</p>
-  <p class="character">- {{ quote.character }}</p>
-</div>
-}
+<footer>
+  <app-quote></app-quote>
+</footer>

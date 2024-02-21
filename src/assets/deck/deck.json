@@ -1,0 +1,104 @@
+{
+  "cards": [
+    {
+      "image": "assets/personajes/fleabag.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/Boo.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/Claire.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/Dad.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/Demetriou.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/Klare.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/Martin.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/Matrigna.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/The Priest.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/The Counsellor.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/fleabag.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/Boo.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/Claire.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/Dad.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/Demetriou.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/Klare.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/Martin.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/Matrigna.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/The Priest.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    },
+    {
+      "image": "assets/personajes/The Counsellor.jpeg",
+      "isFlip": false,
+      "isPaired": false
+    }
+  ]
+}

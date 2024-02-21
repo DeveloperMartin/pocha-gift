@@ -1,27 +1,83 @@
-# PochaGift
+> [!IMPORTANT]
+> Este proyecto fue creado por Zatge, si tienes alguna duda o necesitas ayuda, no dudes en contactarme a través de mis redes sociales: [Instagram](https://www.instagram.com/martinsktordie/), [Twitter](https://twitter.com/PatinetaLove), [Youtube](https://www.youtube.com/channel/UCSYonw54zWp4xGfVuvYItsQ) [Twitch](https://www.twitch.tv/zatge)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
 
-## Development server
+> [!NOTE]
+> Por favor, apoyame con una estrella en el repositorio si te ha sido de ayuda este proyecto y seguime en mis redes. Gracias! 🌟
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Guía de Inicio Rápido para Angular 17 🚀
 
-## Code scaffolding
+Bienvenido a tu nueva aplicación Angular 17. Este documento te guiará a través de los requisitos previos, la instalación y los pasos necesarios para levantar y correr tu proyecto Angular.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Requisitos Previos
 
-## Build
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Node.js**: Angular 17 requiere una versión reciente de Node.js. Recomendamos la última versión LTS que puedes encontrar en [Node.js Downloads](https://nodejs.org/en/download/).
 
-## Running unit tests
+- **npm (Node Package Manager)**: Viene con Node.js, pero es bueno verificar que tienes la última versión. Puedes actualizarlo ejecutando `npm install -g npm` en tu terminal.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instalación de Angular CLI
 
-## Running end-to-end tests
+Angular CLI es una herramienta poderosa que te permite iniciar, desarrollar, escalar y mantener aplicaciones Angular desde la línea de comando. Para instalarlo globalmente en tu sistema, ejecuta el siguiente comando en tu terminal:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+npm install -g @angular/cli
+```
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Crear un Nuevo Proyecto
+
+Con Angular CLI ya instalado, estás listo para crear tu primer proyecto Angular. Abre tu terminal y ejecuta:
+
+```bash
+ng new mi-app-angular
+```
+
+Sigue las instrucciones en la terminal para configurar tu proyecto.
+
+## Levantar tu Aplicación
+
+Una vez que tu proyecto haya sido creado, navega al directorio del proyecto:
+
+```bash
+cd mi-app-angular
+```
+
+
+Y levanta el servidor de desarrollo de Angular:
+
+```bash
+ng serve
+```
+
+
+Abre tu navegador en http://localhost:4200 para ver tu nueva aplicación corriendo.
+
+
+Tambien puede correr el siguiente comando para abrir la aplicación en el navegador por defecto automáticamente:
+
+```bash
+ng serve -o
+```
+
+
+## Próximos Pasos
+
+- **Explora el Código**: Abre el directorio del proyecto en tu editor de código favorito y comienza a explorar.
+- **Aprende Angular**: Visita la [documentación oficial de Angular](https://angular.io/docs) para profundizar en cómo desarrollar aplicaciones con Angular.
+- **Únete a la Comunidad**: Angular tiene una comunidad muy activa y amigable. Únete a foros, grupos en redes sociales o asiste a meetups para conectar con otros desarrolladores.
+
+
+## Queres preparar tu propio juego customizado?
+
+Los archivos importantes estan en:
+
+- `src\assets` - Este directorio contiene tus recursos estáticos como las imágenes de las cartas.
+- `src\app\quote\quote.component.ts` - Este archivo contiene la lógica que muestra las frases en la pantalla.
+- `src\app\services\confetti.service.ts` - Este archivo contiene la lógica que muestra el efecto de confetti en la pantalla.
+- `src\app\board\board.component.ts` - Este archivo contiene la lógica que muestra el tablero del juego en la pantalla.
+- `src\app\timer\timer.component.ts` - Este archivo contiene la lógica que muestra el temporizador en la pantalla.
+
+
+Sin embargo, te aconsejo que leas todo el codigo y cualquier duda que tengas me la hagas saber.

@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/internal/Observable';
+import { BehaviorSubject } from 'rxjs';
 
 interface Quote {
   id: number;
@@ -256,8 +258,21 @@ const quotes: Quote[] = [
   
 })
 export class GetFleabagQuoteService {
-  getQuote() {
+
+  private currentQuoteSource = new BehaviorSubject<Quote>(this.getQuote());
+  currentQuote$ = this.currentQuoteSource.asObservable();
+  
+  currentQuote: Quote = this.getQuote();
+  
+  private getQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
     return quotes[randomIndex];
   }
+
+  refreshQuote() {
+    this.currentQuoteSource.next(this.getQuote());
+  }
+
+
+  
 }
