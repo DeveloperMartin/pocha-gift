@@ -5,6 +5,10 @@
 > [!NOTE]
 > Por favor, apoyame con una estrella en el repositorio si te ha sido de ayuda este proyecto y seguime en mis redes. Gracias! 🌟
 
+# Juego de Memoria con Angular 17
+
+Este es un juego de memoria creado con Angular 17. El juego consiste en encontrar las parejas de cartas iguales en el menor tiempo posible. El juego cuenta con un temporizador y un efecto de confetti al finalizar el juego.
+
 # Guía de Inicio Rápido para Angular 17 🚀
 
 Bienvenido a tu nueva aplicación Angular 17. Este documento te guiará a través de los requisitos previos, la instalación y los pasos necesarios para levantar y correr tu proyecto Angular.
