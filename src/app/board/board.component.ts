@@ -27,7 +27,6 @@ export class BoardComponent {
 
   private timerSubscription!: Subscription;
   juegoTerminado: boolean = false;
-  isWin: boolean = false;
 
   constructor(
       public gameService: GameService,

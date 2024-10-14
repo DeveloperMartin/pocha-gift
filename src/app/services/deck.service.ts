@@ -22,7 +22,7 @@ export class DeckService {
 
   private generateDeck(cards: Card[]): void {
     this.cards = cards;
-    // this.shuffleCards();
+    this.shuffleCards();
   }
 
   private shuffleCards(): void {
